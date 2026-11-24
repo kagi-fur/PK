@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&family=Sarabun:wght@300;400;500;600&display=swap" rel="stylesheet">
+<title>Main page</title>
+</head>
+<style>
+body,html{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+html{scroll-behavior: smooth;}
+body{
+	font-family: 'Prompt', 'Sarabun', Tahoma, sans-serif;
+}
+#top-2{
+	width: 100%;
+	min-height: 100vh;
+	background: linear-gradient(90deg, #102f28e8, #102f2840),url("../pk/pic/krajow-2.jpg")center / cover;
+	width: 100%;
+	padding-buttom: 30px;
+}
+#top img{
+	margin: 20px;
+	border-radius: 20px;
+	box-shadow: 5px 5px 10px;
+	transition: 0.5s;
+}
+#top img:hover{
+	transform: scale(1.05);
+}
+.main-content{
+	display: flex;
+}
+.tung-pic{
+	display: flex;
+	margin-left:10px;
+}
+.tung-pic-1{
+	display: grid;
+}
+.text{
+	
+	display:colum;
+	padding: 25px;	
+	width: fit-content;
+	height: fit-content;
+	margin-top: 10%;
+}
+.text h1{
+	color: pink;
+	font-size: 40px;
+}
+.text p{
+	color: white;
+}
+
+#history{
+	margin-top: 10rem;
+}
+.his-header{
+	text-align: center;
+}
+.his-header p{
+	color: gray;
+}
+.his-card{
+	border: 1px gray solid;
+	border-radius: 20px;
+	padding: 22px;
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 20px;
+	transition:0.5s
+}
+.his-card:hover{
+	transform: scale(1.04);
+}
+.timeline{
+	border: 1px white solid;
+	border-radius: 24px;
+	background-color: #ffe69b;
+	padding: 5px;
+	color: black;
+}
+.his-con{
+	color: gray;
+}
+#location{
+	margin-top: 10rem;
+}
+table,tr,th{
+	border: 1px solid;
+	border-collapse: collapse; 
+}
+.wtable{
+	width: 80%;
+	margin: 0 auto;
+}
+.stable{
+	height: 210px;
+	width: 70%;
+	margin: 0 auto;
+}
+.loca{
+	display: flex;
+}
+.loca1{
+	flex: 2;
+ 	border: 1px gray solid;
+	border-radius: 20px;
+	margin-left: 25px;
+}
+.loca2{
+	flex: 1;
+	
+}
+#location img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	transition: 0.5s;
+}
+#location img:hover{
+	transform: scale(1.05);
+}
+#location h2{
+	margin-left: 35px;
+}
+#location p{
+	padding-left: 22px;
+	padding-right: 22px;
+	color: #334155;
+}
+
+#place{
+	margin-top: 10rem;
+}
+.cards{
+	display: grid;
+	grid-template-columns:repeat(3, 1fr);
+	gap: 22px;
+	margin-top: 50px;
+}
+.card{
+	overflow: hidden;
+	display: colum;
+	border-radius: 20px;
+	box-shadow: 0 5px 20px #20332c12;
+	width: 400px;
+	transition: 0.5s
+}
+.card:hover{
+	transform: scale(1.02);
+}
+.card img{
+	display: block;
+	width: 100%;
+	height: 210px;
+	object-fit: cover;
+	transition: 0.5s;
+}
+.card img:hover{
+	transform: scale(1.05);
+}
+.card-con{
+	padding: 20px;
+}
+.card-con p{
+	color: gray;
+}
+.card-con h3{
+	color: darkgreen;
+}
+footer{
+	display: colum;
+	text-align: center;
+	background-color: lightblue;
+	padding: 28px;
+}
+
+</style>
+<body>
+<header id="top-2">
+<marquee style="color: white;">WELCOME TO MY WEPSITE	อ่านเสร็จแล้วก็อยากลืมไปทำแบบสอบถามความพึงพอใจให้หน่อยนะครับ:)</marquee>
+	<div class="tung-pic" id="top">
+		<div class="text">
+			<h1 style="margin-left:30%">จังหวัดชัยภูมิ</h1>
+			<p><strong>จังหวัดชัยภูมิ</strong> เป็นจังหวัดที่มีขนาดใหญ่เป็นอันดับ 3 ของภาคตะวันออกเฉียงเหนือ และใหญ่เป็นอันดับ 7 ของประเทศไทย ตั้งอยู่บริเวณขอบที่ราบสูงอีสานด้านทิศตะวันตก 				ห่างจากกรุงเทพมหานครประมาณ 332 กิโลเมตร มีพื้นที่รวมประมาณ 12,778.3 ตารางกิโลเมตร และมีประชากรประมาณ 1.10 ล้านคน</p>
+	</div>
+		<img src="../pk/pic/tunggamuk-3.jpg" width="300" height="540">
+		<div class="tung-pic-1">
+			<img src="../pk/pic/phn.jpg" width="500" height="250">
+			<img src="../pk/pic/112.jpg" width="500" height="250">
+		</div>
+	</div>
+</header>
+
+<section id="history">
+<div class="his-header">
+<h1 style="color: #976a36">ประวัติศาสตร์เมืองชัยภูมิ</h1>
+<p>เส้นทางแห่งความกล้าหาญและความซื่อสัตย์ของเจ้าเมืองคนแรก</p>
+</div>
+<article class="his-card">
+	<span class="timeline" style="color: #976a36">สมัยกรุงศรีอยุธยา</span>
+	<h3>จุดเริ่มต้นและการเป็นเมืองร้าง<h3>
+	<p class="his-con">"เมืองชัยภูมิ" ปรากฏชื่อในทำเนียบแผ่นดินสมเด็จพระนารายณ์มหาราช โดยเป็นเมืองขึ้นกับเมืองนครราชสีมา ต่อมาผู้คนได้อพยพออกไปตั้งหลักแหล่งทำมาหากินที่อื่น ทำให้ถูกปล่อยไว้เป็นเมืองร้างชั่วระยะหนึ่ง</p> 
+</article>
+<article class="his-card">
+	<span class="timeline" style="color: #976a36"> พ.ศ. 2360 – 2362 | สมัยรัชกาลที่ 2</span>
+	<h3>การอพยพของ "นายแล" สู่แผ่นดินใหม่<h3>
+	<p class="his-con">"นายแล" ข้าราชการสำนักเจ้าอนุวงศ์เมืองเวียงจันทน์ ได้อพยพครอบครัวและบริวารข้ามแม่น้ำโขงมาตั้งถิ่นฐานที่บ้านหนองน้ำขุ่น (อ.สูงเนิน จ.นครราชสีมา) ก่อนจะย้ายมาตั้งชุมชนใหม่ที่บ้านโนนน้ำอ้อม บ้านชีลอง และส่งส่วยผ้าขาวไปบรรณาการ จนได้รับแต่งตั้งเป็น <strong>"ขุนภักดีชุมพล"</strong></p> 
+</article><article class="his-card">
+	<span class="timeline" style="color: #976a36">พ.ศ. 2365 | สมัยรัชกาลที่ 3</span>
+	<h3>ก่อตั้งเมืองชัยภูมิและขึ้นตรงต่อสยาม<h3>
+	<p class="his-con">เนื่องจากพื้นที่เดิมกันดารน้ำ ขุนภักดีชุมพล (แล) จึงย้ายชุมชนมาตั้งที่  "บ้านหลวง"  (เขต อ.เมืองชัยภูมิ ในปัจจุบัน) พร้อมตัดสินใจหันมาขึ้นตรงต่อเมืองนครราชสีมาและส่งส่วยทองคำถวายรัชกาลที่ 3 จึงทรงพระกรุณาโปรดเกล้าฯ ยกบ้านหลวงขึ้นเป็น  "เมืองชัยภูมิ"  และแต่งตั้งท่านเป็น "พระยาภักดีชุมพล"  เจ้าเมืองคนแรก</p> 
+</article><article class="his-card">
+	<span class="timeline" style="color: #976a36">พ.ศ. 2369 | กบฏเจ้าอนุวงศ์ </span>
+	<h3>วีรกรรมทุ่งสัมฤทธิ์และการร่วมกอบกู้<h3>
+	<p class="his-con">เจ้าอนุวงศ์เวียงจันทน์ก่อกบฏยึดเมืองนครราชสีมาและกวาดต้อนชาวเมืองกลับเวียงจันทน์ แต่เมื่อถึง "ทุ่งสัมฤทธิ์" ชาวเมืองนำโดยคุณหญิงโมได้ลุกฮือขึ้นต่อสู้ พระยาภักดีชุมพล (แล) พร้อมเจ้าเมืองใกล้เคียงจึงยกทัพไปสมทบ ตีกระหนาบทัพเจ้าอนุวงศ์จนแตกพ่ายไป</p> 
+</article><article class="his-card">
+	<span class="timeline" style="color: #976a36">สดุดีวีรบุรุษเมืองชัยภูมิ</span>
+	<h3>ความซื่อสัตย์จนวาระสุดท้ายและศาลสักการะ<h3>
+	<p class="his-con">ทัพลาวส่วนหนึ่งที่ล่าถอยได้บุกยึดเมืองชัยภูมิและเกลี้ยกล่อมให้พระยาภักดีชุมพลเข้าร่วมกบฏ แต่ท่านไม่ยอมจึงถูกประหารชีวิตที่ใต้ต้นมะขามใหญ่ริมหนองปลาเฒ่า ชาวชัยภูมิจึงร่วมใจกันสร้าง "ศาลาพระยาภักดีชุมพล (แล)" ณ บริเวณนั้น เพื่อระลึกถึงคุณความดีและความเสียสละสืบมาจนถึงปัจจุบัน</p> 
+</section>
+
+
+<section id="location">
+<h1 style="text-align: center;">ที่ตั้งจังหวัดชัยภูมิ</h1><br>
+<div class="loca">
+<div class="loca1">
+<h2>ขนาดและที่ตั้ง</h2>
+<p>
+<strong>จังหวัดชัยภูมิ</strong>ตั้งอยู่ในภาคตะวันออกเฉียงเหนือบริเวณใจกลางของประเทศ  เส้นรุ้งที่ 15 องศาเหนือ  เส้นแวงที่ 102  องศาตะวันออก  สูงจากระดับน้ำทะเล  631  ฟุต  ห่างจากกรุงเทพมหานคร โดยทางรถยนต์ 332 กิโลเมตร มีเนื้อที่ประมาณ 12,778.3 ตารางกิโลเมตร หรือ 7,986,429 ไร่ คิดเป็นร้อยละ 7.9 ของพื้นที่ทั้งหมดของภาค และร้อยละ 2.5 ของพื้นที่ทั้งประเทศ มีเนื้อที่ใหญ่เป็นอันดับ 3 ของภาค และใหญ่เป็นอันดับ 7 ของประเทศ มีอาณาเขตติดต่อกับจังหวัดใกล้เคียง  ดังนี้
+<p>
+<h1></h1>
+<p style="text-align: center;color: black;">ตารางทิศและจังหวัดที่ติดจังหวัดชัยภูมิ</p>
+<table class="stable">
+	<tr style="background-color: lightgreen;">
+		<th>ทิศ</th>
+		<th>ติดต่อกับ</th>
+	</tr>
+	<tr>
+		<th>เหนือ</th>
+		<th>จังหวัดขอนแก่น และเพชรบูรณ์</th>
+	</tr>
+	<tr>
+		<th>ตะวันออก</th>
+		<th>จังหวัดขอนแก่น และนครราชสีมา</th>
+	</tr>
+	<tr>
+		<th>ใต้</th>
+		<th>จังหวัดนครราชสีมา</th>
+	</tr>
+	<tr>
+		<th>ตะวันตก</th>
+		<th>จังหวัดลพบุรี และเพชรบูรณ์</th>
+	</tr>
+
+</table>
+</div>
+<div class="loca2">
+<p style="text-align: center;color: black;">แผนที่จังหวัดชัยภูมิ</p>
+<img src="../pk/pic/map_chaiyapum-1.jpg" width="300" height="500" style="border-radius: 20px;">
+</div>
+</div>
+<h2>ประชากรและโครงสร้างประชากร</h2>
+<p>
+จังหวัดชัยภูมิ มีจำนวนราษฎรทั้งสิ้น 1,103,846 คน ราษฎรชาย 543,503 คน คิดเป็นร้อยละ 49.24 ราษฎรหญิง 560,343 คน คิดเป็นร้อยละ 50.76 ของทั้งจังหวัด โดยมีจำนวนครัวเรือนมีทั้งสิ้น 426,208 หลังคาเรือน และความหนาแน่นของประชากรโดยเฉลี่ยทั้งจังหวัด 86.39 คนต่อตารางกิโลเมตร รายละเอียดตามอำเภอที่มีประชากรมากที่สุด คือ อำเภอเมืองชัยภูมิ 178,864 คน รองลงมาอำเภอภูเขียว 118,062 คน และอำเภอที่มีประชากรน้อยที่สุดอำเภอซับใหญ่ 15,487 คน <strong>ดังตารางแสดงจำนวนประชากรแยกเป็นรายอำเภอ</strong>
+</p>
+<table class="wtable">
+	<tr style="background-color: lightgreen;">
+		<th>อำเภอ</th>
+		<th>พื้นที่</th>
+		<th colspan="3">ประชาชน</th>
+	</tr>
+	<tr>
+		<th colspan="2"></th>
+		<th style="background-color: lightblue;">ชาย</th>
+		<th style="background-color: lightpink;">หญิง</th>
+		<th style="background-color: magenta;">รวม</th>
+	</tr>
+	<tr>
+		<th>เมืองชัยภูมิ</th>
+		<th>1,169.898</th>
+		<th>86,438</th>
+		<th>92,426</th>
+		<th>178,864</th>
+	</tr>
+	<tr>
+		<th>บ้านเขว้า</th>
+		<th>544.315</th>
+		<th>24,105</th>
+		<th>25,054</th>
+		<th>49,159</th>
+	</tr>
+	<tr>
+		<th>คอนสวรรค์</th>
+		<th>468.147</th>
+		<th>25,029</th>
+		<th>25,858</th>
+		<th>50,887</th>
+	</tr>
+	<tr>
+		<th>เกษตรสมบูรณ์</th>
+		<th>1,418.967</th>
+		<th>54,599</th>
+		<th>55,437</th>
+		<th>110,036</th>
+	</tr>
+	<tr>
+		<th>หนองบัวแดง</th>
+		<th>2,215.459</th>
+		<th>50,531</th>
+		<th>50,640</th>
+		<th>101,171</th>
+	</tr>
+	<tr>
+		<th>จัตุรัส</th>
+		<th>647.031</th>
+		<th>34,871</th>
+		<th>37,338</th>
+		<th>72,209</th>
+	</tr>
+	<tr>
+		<th>บำเหน็จณรงค์</th>
+		<th>560.300</th>
+		<th>25,105</th>
+		<th>26,195</th>
+		<th>51,300</th>
+	</tr>
+	<tr>
+		<th>หนองบัวระเหว</th>
+		<th>841.782</th>
+		<th>19,055</th>
+		<th>19,111</th>
+		<th>38,166</th>
+	</tr>
+	<tr>
+		<th>เทพสถิต</th>
+		<th>875.604</th>
+		<th>34,657</th>
+		<th>34,102</th>
+		<th>68,759</th>
+	</tr>
+	<tr>
+		<th>ภูเขียว</th>
+		<th>801.757</th>
+		<th>57,786</th>
+		<th>60,276</th>
+		<th>118,062</th>
+	</tr>
+	<tr>
+		<th>บ้านแท่น</th>
+		<th>308.707</th>
+		<th>21,751</th>
+		<th>22,281</th>
+		<th>44,032</th>
+	</tr>
+	<tr>
+		<th>แก้งคร้อ</th>
+		<th>582.196</th>
+		<th>44,728</th>
+		<th>45,984</th>
+		<th>90,712</th>
+	</tr>
+	<tr>
+		<th>คอนสาร</th>
+		<th>966.665</th>
+		<th>29,352</th>
+		<th>30,046</th>
+		<th>59,398</th>
+	</tr>
+	<tr>
+		<th>ภักดีชุมพล</th>
+		<th>900.456</th>
+		<th>15,195</th>
+		<th>15,062</th>
+		<th>30,257</th>
+	</tr>
+	<tr>
+		<th>เนินสง่า</th>
+		<th>222.003</th>
+		<th>12,477</th>
+		<th>12,870</th>
+		<th>25,347</th>
+	</tr>
+	<tr>
+		<th>ซับใหญ่</th>
+		<th>225.000</th>
+		<th>7,824</th>
+		<th>7,663</th>
+		<th>15,487</th>
+	</tr>
+	<tr>
+		<th>รวม</th>
+		<th>12,778.287</th>
+		<th>543,503</th>
+		<th>560,343</th>
+		<th>1,103,846</th>
+	</tr>
+
+</table>
+</section>
+<section id="place">
+<header style="text-align: center;">
+	<h1 style="color: darkgreen;">ไฮไลท์ของจังหวัดชัยภูมิ</h1>
+	<p style="color: gray;">สถานที่ท่องเที่ยวห้ามผลาด!</p>
+</header>
+<div class="cards">
+<article class="card">
+	<img src="../pk/pic/112.jpg">
+	<div class="card-con">
+		<h3>มอหินขาว</h3>
+		<p> "สโตนเฮนจ์เมืองไทย" แห่งอุทยานแห่งชาติภูแลนคา จังหวัดชัยภูมิโดดเด่นด้วยกลุ่มแท่งหินทรายสีขาวขนาดใหญ่กลางลานกว้าง พร้อมจุดชมวิวและลานดูดาวสุดอันซีน</p>
+	</div>
+</article>
+<article class="card">
+	<img src="../pk/pic/krajow-2.jpg">
+	<div class="card-con">
+		<h3>ทุ่งดอกกระเจียว</h3>
+		<p>ราชินีแห่งผืนป่าเมืองชัยภูมิ ที่พร้อมใจกันผลิบานสีชมพูอมม่วงสะพรั่งกลางม่านหมอกในฤดูฝนสัมผัสความสดชื่นของธรรมชาติและอากาศเย็นสบาย ณ อุทยานแห่งชาติป่าหินงาม และอุทยานแห่งชาติไทรทอง</p>
+	</div>
+</article>
+<article class="card">
+	<img src="../pk/pic/tunggamuk.jpg">
+	<div class="card-con">
+		<h3>ทุ่งกระมัง</h3>
+		<p> ทุ่งหญ้าสะวันนาบนที่ราบสูงกลางเขตรักษาพันธุ์สัตว์ป่าภูเขียว จังหวัดชัยภูมิโอบล้อมด้วยขุนเขาและธรรมชาติอุดมสมบูรณ์ แหล่งอาศัยของเนื้อทราย เก้ง กวาง และนกนานาชนิด</p>
+	</div>
+</article>
+<article class="card">
+	<img src="../pk/pic/pudtublao.jpg">
+	<div class="card-con">
+		<h3>น้ำผุดทับลาว</h3>
+		<p> ตาน้ำธรรมชาติใสสะอาดไหลเย็นตลอดปี ท่ามกลางป่าไม้ร่มรื่นในอำเภอคอนสาร จังหวัดชัยภูมิจุดเช็กอินคลายร้อนยอดฮิต เหมาะสำหรับนั่งปิกนิก พักผ่อนหย่อนใจ และลงเล่นน้ำท่ามกลางบรรยากาศสุดชิล</p>
+	</div>
+</article>
+<article class="card">
+	<img src="../pk/pic/tadton.jpg">
+	<div class="card-con">
+		<h3>น้ำตกตาดโตน</h3>
+		<p> น้ำตกขนาดใหญ่ที่สวยงามและมีน้ำไหลตลอดปี แลนด์มาร์กยอดนิยมประจำอุทยานแห่งชาติตาดโตน จังหวัดชัยภูมิ</p>
+	</div>
+</article>
+<article class="card">
+	<img src="../pk/pic/phn.jpg">
+	<div class="card-con">
+		<h3>ผาหัวนาค</h3>
+		<p> จุดชมวิวสูงสุดบนเทือกเขาภูแลนคาในเขตอุทยานแห่งชาติภูแลนคา จังหวัดชัยภูมิโดดเด่นด้วยชะง่อนผาหินคล้ายศีรษะพญานาค พร้อมวิวทิวทัศน์แบบพาโนรามา จุดชมพระอาทิตย์ตก และทะเลหมอกยามเช้า</p>
+	</div>
+</article>
+</div>
+</section>
+
+<footer>
+<p><strong>CHAIYAPHUM</p>
+<p>อ่านจบแล้วขอความกรุณาทำแบบความพึงพอใจให้ด้วยนะครับ</p>
+</footer>
+</body>
+</html>
